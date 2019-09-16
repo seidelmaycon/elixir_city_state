@@ -7,5 +7,9 @@ defmodule ElixirGraphqlWeb.Router do
 
   scope "/api" do
     pipe_through :api
+
+    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: ElixirGraphqlWeb.Schema
+
+    forward "/", Absinthe.Plug, schema: ElixirGraphqlWeb.Schema
   end
 end
