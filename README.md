@@ -1,5 +1,12 @@
 # ElixirGraphql
 
+## Demo
+
+You can visit [`a demo in a heroku free dyno`](https://shielded-temple-57379.herokuapp.com/api/graphiql) to check a live version of this project.
+  - note that heroku free dyno could delay until 30 seconds to wake up.
+
+## Setup
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
