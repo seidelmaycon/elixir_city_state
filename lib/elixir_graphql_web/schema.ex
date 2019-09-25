@@ -1,6 +1,6 @@
 defmodule ElixirGraphqlWeb.Schema do
   use Absinthe.Schema
-  import_types(ElixirGraphqlWeb.Schema.ContentTypes)
+  import_types(ElixirGraphqlWeb.Schema.CityTypes)
 
   alias ElixirGraphqlWeb.Resolvers
 
@@ -9,13 +9,13 @@ defmodule ElixirGraphqlWeb.Schema do
     field :cities, list_of(:city) do
       arg(:uf, :string)
       arg(:name, :string)
-      resolve(&Resolvers.Content.list_cities/3)
+      resolve(&Resolvers.City.list_cities/3)
     end
 
     @desc "Find a city"
     field :city, type: :city do
       arg(:id, non_null(:id))
-      resolve(&Resolvers.Content.find_city/3)
+      resolve(&Resolvers.City.find_city/3)
     end
   end
 end

@@ -1,4 +1,4 @@
-defmodule ElixirGraphqlWeb.Schema.ContentTypes do
+defmodule ElixirGraphqlWeb.Schema.CityTypes do
   use Absinthe.Schema.Notation
 
   object :city do

@@ -20,7 +20,7 @@ defmodule ElixirGraphql.MixProject do
   def application do
     [
       mod: {ElixirGraphql.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ex_machina]
     ]
   end
 
@@ -43,7 +43,9 @@ defmodule ElixirGraphql.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:absinthe, ">= 1.3.1"},
       {:absinthe_plug, ">= 1.3.0"},
-      {:absinthe_ecto, ">= 0.1.3"}
+      {:absinthe_ecto, ">= 0.1.3"},
+      {:credo, ">= 1.1.4"},
+      {:ex_machina, "~> 2.3"}
     ]
   end
 

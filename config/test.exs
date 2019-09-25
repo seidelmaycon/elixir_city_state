@@ -2,8 +2,7 @@ use Mix.Config
 
 # Configure your database
 config :elixir_graphql, ElixirGraphql.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "mayconseidel",
   database: "elixir_graphql_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
